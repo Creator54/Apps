@@ -35,7 +35,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         buttonreset.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                resetboard();
+                player1Points=0;
+                player2Points=0;
+                textviewPlayer1.setText("Player 1 : "+ player1Points);
+                textviewPlayer2.setText("Player 2 : "+ player2Points);
             }
         });
     }
